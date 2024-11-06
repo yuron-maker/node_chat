@@ -52,7 +52,6 @@ async function join(id, userId) {
     });
     return result;
   } catch (error) {
-    console.log(error);
     throw ApiError.UnprocessableEntity({
       error: 'Room or User does not exist'
     });

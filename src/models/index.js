@@ -5,10 +5,10 @@ import { Message, initialization as initMessage } from './messages.js';
 import * as UsersRooms from './usersRooms.js';
 
 const config = {
-  database: process.env.DB_DB,
-  username: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  host: process.env.DB_HOST,
+  database: process.env.DB_DB || 3005,
+  username: process.env.DB_USER || 'postgres',
+  password: process.env.DB_PASSWORD || 'password',
+  host: process.env.DB_HOST || 'localhost',
   dialect: 'postgres',
 };
 
